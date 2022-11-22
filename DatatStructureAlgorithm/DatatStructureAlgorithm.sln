@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatatStructureAlgorithm", "DatatStructureAlgorithm.csproj", "{EB0ABD13-0940-4837-803E-12A58DDE79CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB0ABD13-0940-4837-803E-12A58DDE79CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0ABD13-0940-4837-803E-12A58DDE79CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0ABD13-0940-4837-803E-12A58DDE79CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0ABD13-0940-4837-803E-12A58DDE79CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01ED40FD-9C41-4E85-8AA8-885B59B9E32C}
+	EndGlobalSection
+EndGlobal
