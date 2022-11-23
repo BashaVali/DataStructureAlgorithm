@@ -18,7 +18,8 @@ class Program
                               "2.InsertionSort\n"+
                               "3.BubbleSort\n" +
                               "4.Anagram\n"+
-                              "5.Exit" + "\n");
+                              "5.UserInput\n"+
+                              "6.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -42,6 +43,11 @@ class Program
                     anagram.CheckAnagram("Heart", "Earth");
                     break;
                 case 5:
+                    UserInput userInput= new UserInput();
+                    userInput.ReplaceString();
+                    break;
+
+                case 6:
                     flag = false;
                     break;
             }
