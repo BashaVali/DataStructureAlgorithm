@@ -19,7 +19,8 @@ class Program
                               "3.BubbleSort\n" +
                               "4.Anagram\n"+
                               "5.UserInput\n"+
-                              "6.Exit" + "\n");
+                              "6.PrimeNumberRange\n"+
+                              "7.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -46,8 +47,13 @@ class Program
                     UserInput userInput= new UserInput();
                     userInput.ReplaceString();
                     break;
-
                 case 6:
+                    Console.WriteLine("The prime numbers are : ");
+                    PrimeNumberRange primeNumberRange = new PrimeNumberRange();
+                    primeNumberRange.FindPrime();
+                    break;
+
+                case 7:
                     flag = false;
                     break;
             }
