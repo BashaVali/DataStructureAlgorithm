@@ -17,7 +17,8 @@ class Program
             Console.WriteLine("1.BinarySearch\n" +
                               "2.InsertionSort\n"+
                               "3.BubbleSort\n" +
-                              "4.Exit" + "\n");
+                              "4.Anagram\n"+
+                              "5.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -32,12 +33,15 @@ class Program
                     insertion.Sort(arr);
                     break;
                 case 3:
-                        BubbleSort bubble = new BubbleSort();
                     int[] arr2 = { 5, 2, 1, 4, 3 };
+                    BubbleSort bubble = new BubbleSort();
                     bubble.Sort(arr2);
                     break;
-
                 case 4:
+                    Anagram anagram = new Anagram();
+                    anagram.CheckAnagram("Heart", "Earth");
+                    break;
+                case 5:
                     flag = false;
                     break;
             }
