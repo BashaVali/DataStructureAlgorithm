@@ -12,7 +12,7 @@ namespace DataStructureAlgorithm
         // public void ReadTextFile(string filepath)
         //{
         //  string words = File.ReadAllText(filepath);
-        //binaryArr = words.Split(",");       
+        //  binaryArr = words.Split(",");       
         //}
         public void Sort(int[] binaryArr)
         {
