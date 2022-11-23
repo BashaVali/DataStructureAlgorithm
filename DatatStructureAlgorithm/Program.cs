@@ -26,9 +26,9 @@ class Program
                     search.BinarySearchOperation("BinarySearch");
                     break;
                 case 2:
+                    int[] arr = { 2, 1, 3 };
                     InsertionSort insertion = new InsertionSort();
-                    insertion.ReadTextFile(binaryTextPath);
-                    insertion.Sort();
+                    insertion.Sort(arr);
                     break;
 
                 case 3:
