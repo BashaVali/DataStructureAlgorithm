@@ -6,6 +6,7 @@ class Program
     public static string binaryTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\BinarySearch.txt";
     public static void Main(string[] args)
     {
+
         bool flag = true;
         while (flag)
         {
@@ -14,7 +15,8 @@ class Program
             Console.WriteLine(" Select the option ");
 
             Console.WriteLine("1.BinarySearch\n" +
-                              "2.Exit" + "\n");
+                              "2.InsertionSort\n"+
+                              "3.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -23,8 +25,13 @@ class Program
                     search.ReadTextFile(binaryTextPath);
                     search.BinarySearchOperation("BinarySearch");
                     break;
-               
                 case 2:
+                    InsertionSort insertion = new InsertionSort();
+                    insertion.ReadTextFile(binaryTextPath);
+                    insertion.Sort();
+                    break;
+
+                case 3:
                     flag = false;
                     break;
             }
