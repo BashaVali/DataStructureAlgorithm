@@ -4,6 +4,7 @@ namespace DataStructureAlgorithm;
 class Program
 {
     public static string binaryTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\BinarySearch.txt";
+    public static string numberTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\Numbers.txt";
     public static void Main(string[] args)
     {
 
@@ -20,7 +21,9 @@ class Program
                               "4.Anagram\n"+
                               "5.UserInput\n"+
                               "6.PrimeNumberRange\n"+
-                              "7.Exit" + "\n");
+                              "7.LinkedListGeneric\n"+
+                              "8.OrderedList\n"+
+                              "9.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -52,8 +55,17 @@ class Program
                     PrimeNumberRange primeNumberRange = new PrimeNumberRange();
                     primeNumberRange.FindPrime();
                     break;
-
                 case 7:
+                    LinkedListGeneric<string> linkedListGeneric = new LinkedListGeneric<string>();
+                    linkedListGeneric.Add("Add");
+                    linkedListGeneric.Delete("Delete");
+                    linkedListGeneric.Display();
+                    break;
+                case 8:
+                    OrderedList orderedList = new OrderedList();
+                    orderedList.ReadTextFile(numberTextPath);
+                    break;
+                case 9:
                     flag = false;
                     break;
             }
