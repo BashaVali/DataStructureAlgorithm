@@ -5,6 +5,7 @@ class Program
 {
     public static string binaryTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\BinarySearch.txt";
     public static string numberTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\Numbers.txt";
+    public static string BalancedParanthesisTextPath = @"C:\Users\Basha\Documents\DotNet\PracticePrograms\DataStructureAlgorithm\DatatStructureAlgorithm\Files\BalancedParanthesis.txt";
     public static void Main(string[] args)
     {
 
@@ -23,8 +24,9 @@ class Program
                               "6.PrimeNumberRange\n"+
                               "7.LinkedListGeneric\n"+
                               "8.OrderedList\n"+
-                              "9.OrderedList\n" +
-                              "10.Exit" + "\n");
+                              "9.UnOrderedList\n" +
+                              "10.BalancedParanthesis\n" +
+                              "11.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -71,6 +73,10 @@ class Program
                     unOrderedList.ReadAllTextFile(numberTextPath);
                     break;
                 case 10:
+                    BalancedParanthesis balancedParanthesis = new BalancedParanthesis();
+                    balancedParanthesis.ReadTextFile(BalancedParanthesisTextPath);
+                    break;
+                case 11:
                     flag = false;
                     break;
             }
