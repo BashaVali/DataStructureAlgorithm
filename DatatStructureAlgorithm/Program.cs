@@ -23,7 +23,8 @@ class Program
                               "6.PrimeNumberRange\n"+
                               "7.LinkedListGeneric\n"+
                               "8.OrderedList\n"+
-                              "9.Exit" + "\n");
+                              "9.OrderedList\n" +
+                              "10.Exit" + "\n");
         int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -66,6 +67,10 @@ class Program
                     orderedList.ReadTextFile(numberTextPath);
                     break;
                 case 9:
+                    UnOrderedList unOrderedList = new UnOrderedList();
+                    unOrderedList.ReadAllTextFile(numberTextPath);
+                    break;
+                case 10:
                     flag = false;
                     break;
             }
